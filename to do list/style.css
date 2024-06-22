@@ -1,0 +1,30 @@
+div{
+    margin-bottom: 10px;
+}
+input ,textarea, select{
+    width: 100%;
+}
+.low
+{
+    background-color: darkturquoise;
+    height: 20px;
+    width: 100%;
+}
+.Medium
+{
+    background-color: rgb(8, 77, 73);
+    height: 20px;
+    width: 100%;
+}
+.High
+{
+    background-color: rosybrown;
+    height: 20px;
+    width: 100%;
+}
+.Highest
+{
+    background-color: red;
+    height: 20px;
+    width: 100%;
+}

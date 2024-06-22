@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div>
+        <form>
+            <div style="width: 48%; float: left;">
+                <div>
+                    <input type="text" id="txtInput" class="inputText">
+                    <input type="button" value="Clear" class="ClearButton" onclick="calculator.ClearData()">
+                </div>
+                <div class="RowDiv"> <!-- (this) send all the buttom not only the text -->
+                    <input type="button" value="7" class="calculation" onclick="calculator.WriteText(this)">
+                    <input type="button" value="8" class="calculation" onclick="calculator.WriteText(this)">
+                    <input type="button" value="9" class="calculation" onclick="calculator.WriteText(this)">
+                </div>
+                <div class="RowDiv">
+                    <input type="button" value="4" class="calculation" onclick="calculator.WriteText(this)">
+                    <input type="button" value="5" class="calculation" onclick="calculator.WriteText(this)">
+                    <input type="button" value="6" class="calculation" onclick="calculator.WriteText(this)">
+                </div>
+                <div class="RowDiv">
+                    <input type="button" value="3" class="calculation" onclick="calculator.WriteText(this)">
+                    <input type="button" value="2" class="calculation" onclick="calculator.WriteText(this)">
+                    <input type="button" value="1" class="calculation" onclick="calculator.WriteText(this)">
+                </div>
+                <div class="RowDiv">
+                    <input type="button" value="+" class="operCutton" onclick="calculator.OperatorClick('1')">
+                    <input type="button" value="-" class="operCutton" onclick="calculator.OperatorClick('2')">
+                    <input type="button" value="*" class="operCutton" onclick="calculator.OperatorClick('3')">
+                    <input type="button" value="/" class="operCutton" onclick="calculator.OperatorClick('4')">
+                </div>
+                <div>
+                    <input type="button" value="=" class="EqualCutton" onclick="calculator.calculation()">
+                </div>
+            </div>
+
+            <div style="width: 48%; float:left;">
+                <ul id="DivValues">
+                    <li></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
